@@ -61,3 +61,5 @@ export class TaskService {
     return this.tasks.filter((t) => t.completed === completed);
   }
 }
+
+export const taskService = new TaskService();

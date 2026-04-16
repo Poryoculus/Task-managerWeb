@@ -1,19 +1,32 @@
 {
   "name": "task-manager",
   "version": "1.0.0",
-  "description": "",
+  "description": "The software is a command-line Task Manager application developed with TypeScript and Node.js. It allows users to create, organize, and manage tasks directly from the terminal. The application is structured into models, services, and utility modules, promoting separation of concerns and maintainability.",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/app.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "and": "^0.0.3",
+    "express": "^5.2.1",
+    "install": "^0.13.0",
+    "nodemon": "^3.1.14",
+    "npm": "^11.12.1",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.2"
   },
-  "devDependencies": {
-    "@types/node": "^25.5.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poryoculus/Task-managerWeb.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Poryoculus/Task-managerWeb/issues"
+  },
+  "homepage": "https://github.com/Poryoculus/Task-managerWeb#readme"
 }
