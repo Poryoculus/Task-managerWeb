@@ -2,47 +2,55 @@
 
 ## 📌 Overview
 
+The software is a web-based Task Manager application developed with TypeScript, Node.js, and Express. It allows users to create, organize, and manage tasks through a browser interface instead of the command line.
 
-The software is a command-line Task Manager application developed with TypeScript and Node.js. It allows users to create, organize, and manage tasks directly from the terminal. The application is structured into models, services, and utility modules, promoting separation of concerns and maintainability.
+The application follows a modular architecture using controllers, services, and utility modules, promoting separation of concerns and maintainability.
 
-The purpose of this project is to practice backend logic and reinforce key programming concepts such as asynchronous operations, error handling, and recursion. By building a practical tool, the project simulates real-world task management scenarios while improving code organization, data persistence strategies, and overall software design skills.
+The purpose of this project is to practice backend development concepts such as request handling, routing, asynchronous operations, and data persistence. It also reinforces software design principles by simulating a real-world task management system with a simple UI.
 
 ---
 
 ## 🚀 Features
 
-- Add tasks with title and category
-- View all tasks
-- Mark tasks as completed
-- Delete tasks
-- Filter tasks by completion status
-- Persistent storage using JSON file
-- Recursive countdown function
-- Error handling demonstration
+	•	Create tasks with title and category
+	•	View tasks in a web interface
+	•	Mark tasks as completed
+	•	Delete tasks
+	•	Filter tasks (completed / pending)
+	•	View task statistics (total, completed, pending, percentage)
+	•	Tasks grouped by category
+	•	Persistent storage using a JSON file
+	•	Recursive countdown demo
+	•	Error handling demonstration
 
 ---
 
 ## 🛠️ Technologies Used
 
-- TypeScript
-- Node.js
-- ts-node
-- File system (fs module)
+	•	TypeScript
+	•	Node.js
+	•	Express.js
+	•	File System (fs module)
+	•	HTML + CSS (server-rendered)
 
 ---
 
 ## 📂 Project Structure
 + src/
-  - index.ts
-  + models
-    - task.ts
-  + services
+  - app.ts
+  + routes/
+    - taskRoutes.ts
+  + controllers/
+    - taskController.ts
+  + services/
     - TaskService.ts
-  + task.json
-  + utils
-    + errorDemo.ts
-    + recursion.ts
-    + storage.ts
+  + models/
+    - Task.ts
+  + utils/
+    - storage.ts
+  + public/
+    - style.css
++ tasks.json
 ---
 
 ## ▶️ How to Run the Program
@@ -50,28 +58,34 @@ The purpose of this project is to practice backend logic and reinforce key progr
 /1. Clone the repository:
 
 ```
-git clone https://github.com/Poryoculus/task-manager.git
-cd task-manager
+git clone https://github.com/Poryoculus/Task-managerWeb.git
+cd Task-managerWeb
 ```
 /2.	Install dependencies:
 ```
 npm install
 ```
 
-/3.	Run the application:
+/3.	Run the server
 ```
 npm run start
 ```
 
+
+/3.	Open the browser
+```
+http://localhost:3000
+```
+
 ## Youtube video
 
-https://youtu.be/MJ83jBdcqtI
+Soon
 
 # Development Environment
 
-The development of this project was done using Nvim as the primary code editor. Node.js was used as the runtime environment to execute the application, and ts-node was used to run TypeScript files directly without a separate compilation step. The built-in file system (fs) module was used to handle data persistence through a JSON file.
+The development of this project was done using Nvim as the primary code editor. Node.js was used as the runtime environment, and TypeScript was used to provide strong typing and improve code maintainability.
 
-The programming language used for this project was TypeScript. It was chosen for its strong typing system and its ability to improve code reliability and maintainability, making it well-suited for building structured backend applications and managing application logic efficiently.
+Express.js was used to handle HTTP requests and routing, transforming the application from a CLI tool into a web-based system. The built-in file system (fs) module was used for persistent storage through a JSON file.
 
 # Useful Websites
 
@@ -79,3 +93,4 @@ The programming language used for this project was TypeScript. It was chosen for
 - https://nodejs.org/en/docs  
 - https://www.w3schools.com/typescript/  
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- https://expressjs.com/
