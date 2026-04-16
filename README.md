@@ -79,7 +79,7 @@ http://localhost:3000
 
 ## Youtube video
 
-Soon
+https://www.youtube.com/watch?v=K2OMU_tetEM
 
 # Development Environment
 
